@@ -3,58 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Tags List</title>
+    <title>HTML Tags Reference</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #ddd;
-        }
+        body { font-family: Arial, sans-serif; }
+        .container { display: flex; flex-wrap: wrap; }
+        .card { border: 1px solid #ccc; border-radius: 5px; margin: 10px; padding: 15px; width: calc(25% - 40px); }
+        .search { margin-bottom: 20px; }
     </style>
 </head>
 <body>
-    <h1>List of HTML Tags</h1>
-    <table>
-        <tr>
-            <th>#</th>
-            <th>Tag Name</th>
-            <th>Description</th>
-            <th>Usage Example</th>
-        </tr>
-        <!-- Entries will go here -->
-        {{tagRows}}
-    </table>
+    <h1>Complete List of HTML Tags</h1>
+    <input type="text" class="search" placeholder="Search for a tag...">
+    <div class="container">
+        <div class="card">
+            <h2>&lt;div&gt;</h2>
+            <p>Description: The <code>&lt;div&gt;</code> element is a block-level container.</p>
+            <p>Example: <code>&lt;div&gt;Content&lt;/div&gt;</code></p>
+        </div>
+
+        <div class="card">
+            <h2>&lt;a&gt;</h2>
+            <p>Description: The <code>&lt;a&gt;</code> element defines a hyperlink.</p>
+            <p>Example: <code>&lt;a href='https://example.com'&gt;Visit Example&lt;/a&gt;</code></p>
+        </div>
+        
+        <!-- Add additional cards for 100 more HTML tags here -->
+    </div>
+    <script>
+        const searchInput = document.querySelector('.search');
+        searchInput.addEventListener('keyup', function() {
+            const filter = searchInput.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const tagName = card.querySelector('h2').textContent.toLowerCase();
+                if (tagName.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
