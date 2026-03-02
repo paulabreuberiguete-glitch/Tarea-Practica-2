@@ -1,86 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 HTML Tags</title>
-    <style>
-        body {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        #search {
-            margin-bottom: 20px;
-            padding: 10px;
-            width: 100%;
-            font-size: 16px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>HTML Tags Reference</title>
 </head>
 <body>
-    <h1>102 HTML Tags with Descriptions and Examples</h1>
-    <input type="text" id="search" placeholder="Search for tags..." onkeyup="filterTags()">
-    <table>
-        <thead>
-            <tr>
-                <th>Tag</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-        </thead>
-        <tbody id="tagsList">
-            <!-- Example rows for tags -->
-            <tr>
-                <td>&lt;a&gt;</td>
-                <td>Defines a hyperlink.</td>
-                <td>&lt;a href='https://example.com'&gt;Example&lt;/a&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;div&gt;</td>
-                <td>Defines a division or section.</td>
-                <td>&lt;div&gt;Content&lt;/div&gt;</td>
-            </tr>
-            <!-- More rows should be added here up to 102 tags -->
-        </tbody>
-    </table>
-
-    <script>
-        function filterTags() {
-            var input, filter, table, tr, td, i, j, txtValue;
-            input = document.getElementById("search");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("tagsList");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                tr[i].style.display = "none";
-                td = tr[i].getElementsByTagName("td");
-                for (j = 0; j < td.length; j++) {
-                    if (td[j]) {
-                        txtValue = td[j].textContent || td[j].innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            tr[i].style.display = "";
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <h1>102 HTML Tags Reference</h1>
+    <ul>
+        <li><strong>&lt;a&gt;</strong> - Defines a hyperlink. Example: <code>&lt;a href='https://example.com'&gt;Link&lt;/a&gt;</code></li>
+        <li><strong>&lt;abbr&gt;</strong> - Defines an abbreviation or acronym. Example: <code>&lt;abbr title='Hypertext Markup Language'&gt;HTML&lt;/abbr&gt;</code></li>
+        <li><strong>&lt;address&gt;</strong> - Defines contact information for an author or owner of a document. Example: <code>&lt;address&gt;123 Main St&lt;/address&gt;</code></li>
+        <li><strong>&lt;area&gt;</strong> - Defines a clickable area inside an image map. Example: <code>&lt;area shape='rect' coords='34,44,270,350' href='{' target='_blank'&gt;Click&lt;/area&gt;</code></li>
+        <li><strong>&lt;article&gt;</strong> - Defines an independent, self-contained piece of content. Example: <code>&lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;p&gt;Article content...&lt;/p&gt;&lt;/article&gt;</code></li>
+        <li><strong>&lt;aside&gt;</strong> - Defines content aside from the main content. Example: <code>&lt;aside&gt;Related Links&lt;/aside&gt;</code></li>
+        <li><strong>&lt;audio&gt;</strong> - Defines sound content. Example: <code>&lt;audio controls&gt;&lt;source src='audio.mp3' type='audio/mpeg'&gt;Your browser does not support the audio tag.&lt;/audio&gt;</code></li>
+        <li><strong>&lt;b&gt;</strong> - Defines bold text. Example: <code>&lt;b&gt;Bold text&lt;/b&gt;</code></li>
+        <li><strong>&lt;base&gt;</strong> - Specifies a base URL for relative URLs in a document. Example: <code>&lt;base href='https://example.com/'&gt;</code></li>
+        <li><strong>&lt;bdi&gt;</strong> - Isolates a part of text that might be formatted in a different direction. Example: <code>&lt;bdi&gt;This text is not translated!&lt;/bdi&gt;</code></li>
+        <li><strong>&lt;bdo&gt;</strong> - Overrides the current text direction. Example: <code>&lt;bdo dir='rtl'&gt;This text is right-to-left.&lt;/bdo&gt;</code></li>
+        <li><strong>&lt;br&gt;</strong> - Inserts a single line break. Example: <code>&lt;br&gt;</code></li>
+        <li><strong>&lt;button&gt;</strong> - Defines a clickable button. Example: <code>&lt;button&gt;Click me&lt;/button&gt;</code></li>
+        <li><strong>&lt;canvas&gt;</strong> - Defines a drawing area. Example: <code>&lt;canvas id='myCanvas' width='200' height='100'&gt;&lt;/canvas&gt;</code></li>
+        <li><strong>&lt;caption&gt;</strong> - Defines a table caption. Example: <code>&lt;table&gt;&lt;caption&gt;Table Caption&lt;/caption&gt;
+        
+        <li><strong>&lt;cite&gt;</strong> - Defines a citation. Example: <code>&lt;cite&gt;Shakeapeare&lt;/cite&gt;</code></li>
+        <li><strong>&lt;code&gt;</strong> - Displays a single line of code. Example: <code>&lt;code&gt;var x = 5;&lt;/code&gt;</code></li>
+        <li><strong>&lt;col&gt;</strong> - Specifies column properties for an element. Example: <code>&lt;col style='background-color:lightgray'&gt;</code></li>
+        <li><strong>&lt;colgroup&gt;</strong> - Specifies a group of one or more columns in a table for formatting. Example: <code>&lt;colgroup&gt;&lt;col style='background-color:gray'&gt;&lt;/colgroup&gt;</code></li>
+        <li><strong>&lt;data&gt;</strong> - Links a given content with a machine-readable translation. Example: <code>&lt;data value='12345'&gt;12345&lt;/data&gt;</code></li>
+        <li><strong>&lt;datalist&gt;</strong> - Specifies a list of pre-defined options for input controls. Example: <code>&lt;input list='browsers'&gt;&lt;datalist id='browsers'&gt;&lt;option value='Chrome'&gt;&lt;option value='Firefox'&gt;&lt;/datalist&gt;</code></li>
+        <li><strong>&lt;dd&gt;</strong> - Defines a description of a term in a description list. Example: <code>&lt;dd&gt;Description&lt;/dd&gt;</code></li>
+        <li><strong>&lt;del&gt;</strong> - Defines text that has been deleted from a document. Example: <code>&lt;del&gt;Deleted text&lt;/del&gt;</code></li>
+        <li><strong>&lt;details&gt;</strong> - Defines additional details that the user can view or hide. Example: <code>&lt;details&gt;&lt;summary&gt;More info&lt;/summary&gt;Details...&lt;/details&gt;</code></li>
+        <li><strong>&lt;dfn&gt;</strong> - Represents the defining instance of a term. Example: <code>&lt;dfn&gt;HTML&lt;/dfn&gt;</code></li>
+        <li><strong>&lt;dialog&gt;</strong> - Defines a dialog box or window. Example: <code>&lt;dialog open&gt;This is a dialog&lt;/dialog&gt;</code></li>
+        <li><strong>&lt;div&gt;</strong> - Defines a section or a division in an HTML document. Example: <code>&lt;div&gt;&lt;p&gt;Some text&lt;/p&gt;&lt;/div&gt;</code></li>
+        <li><strong>&lt;dl&gt;</strong> - Defines a description list. Example: <code>&lt;dl&gt;&lt;dt&gt;Term&lt;/dt&gt;&lt;dd&gt;Definition&lt;/dd&gt;&lt;/dl&gt;</code></li>
+        <li><strong>&lt;dt&gt;</strong> - Defines a term in a description list. Example: <code>&lt;dt&gt;Term&lt;/dt&gt;</code></li>
+        <li><strong>&lt;em&gt;</strong> - Defines emphasized text. Example: <code>&lt;em&gt;This text is emphasized&lt;/em&gt;</code></li>
+        <li><strong>&lt;embed&gt;</strong> - Defines a container for an external application or interactive content (like a plug-in). Example: <code>&lt;embed src='file.swf'&gt;</code></li>
+        <li><strong>&lt;fieldset&gt;</strong> - Groups related elements in a form. Example: <code>&lt;fieldset&gt;&lt;legend&gt;Personal Info&lt;/legend&gt;&lt;p&gt;Name: <input type='text'>&lt;/p&gt;&lt;/fieldset&gt;</code></li>
+        <li><strong>&lt;figcaption&gt;</strong> - Defines a caption for a <figure> element. Example: <code>&lt;figure&gt;&lt;img src='image.jpg'&gt;&lt;figcaption&gt;An image&lt;/figcaption&gt;&lt;/figure&gt;</code></li>
+        <li><strong>&lt;figure&gt;</strong> - Specifies self-contained content, like an image with a caption. Example: <code>&lt;figure&gt;&lt;img src='image.jpg'&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;</code></li>
+        <li><strong>&lt;footer&gt;</strong> - Defines a footer for a document or section. Example: <code>&lt;footer&gt;&lt;p&gt;Footer content&lt;/p&gt;&lt;/footer&gt;</code></li>
+        <li><strong>&lt;form&gt;</strong> - Defines an HTML form for user input. Example: <code>&lt;form&gt;&lt;input type='text'&gt;&lt;/form&gt;</code></li>
+        <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Defines HTML headings. Example: <code>&lt;h1&gt;Heading 1&lt;/h1&gt; ... &lt;h6&gt;Heading 6&lt;/h6&gt;</code></li>
+        <li><strong>&lt;head&gt;</strong> - Contains meta-information about the document. Example: <code>&lt;head&gt;&lt;title&gt;Document Title&lt;/title&gt;&lt;/head&gt;</code></li>
+        <li><strong>&lt;header&gt;</strong> - Defines a header for a document or section. Example: <code>&lt;header&gt;&lt;h1&gt;Header Content&lt;/h1&gt;&lt;/header&gt;</code></li>
+        <li><strong>&lt;hr&gt;</strong> - Defines a thematic change in the content. Example: <code>&lt;hr&gt;</code></li>
+        <li><strong>&lt;html&gt;</strong> - Defines the root of an HTML document. Example: <code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code></li>
+        <li><strong>&lt;i&gt;</strong> - Defines italic text. Example: <code>&lt;i&gt;Italic text&lt;/i&gt;</code></li>
+        <li><strong>&lt;iframe&gt;</strong> - Defines an inline frame. Example: <code>&lt;iframe src='https://example.com'&gt;&lt;/iframe&gt;</code></li>
+        <li><strong>&lt;img&gt;</strong> - Embeds an image in a document. Example: <code>&lt;img src='image.jpg' alt='Description'&gt;</code></li>
+        <li><strong>&lt;input&gt;</strong> - Defines an input control. Example: <code>&lt;input type='text'&gt;</code></li>
+        <li><strong>&lt;ins&gt;</strong> - Defines text that has been inserted into a document. Example: <code>&lt;ins&gt;Inserted text&lt;/ins&gt;</code></li>
+        <li><strong>&lt;kbd&gt;</strong> - Defines keyboard input. Example: <code>&lt;kbd&gt;Ctrl + C&lt;/kbd&gt;</code></li>
+        <li><strong>&lt<label&gt;</strong> - Defines a label for an <input> element. Example: <code>&lt;label for='name'&gt;Name&lt;/label&gt;&lt;input type='text' id='name'&gt;</code></li>
+        <li><strong>&lt;legend&gt;</strong> - Defines a caption for a <fieldset> element. Example: <code>&lt;fieldset&gt;&lt;legend&gt;Personal Info&lt;/legend&gt;&lt;/fieldset&gt;</code></li>
+        <li><strong>&lt;li&gt;</strong> - Defines a list item. Example: <code>&lt;li&gt;List item&lt;/li&gt;</code></li>
+        <li><strong>&lt;link&gt;</strong> - Defines the relationship between a document and an external resource (most used for stylesheets). Example: <code>&lt;link rel='stylesheet' href='style.css'&gt;</code></li>
+        <li><strong>&lt;main&gt;</strong> - Defines the main content of a document. Example: <code>&lt;main&gt;&lt;p&gt;Main Content&lt;/p&gt;&lt;/main&gt;</code></li>
+        <li><strong>&lt;map&gt;</strong> - Defines an image map. Example: <code>&lt;map name='mapname'&gt;&lt;area shape='rect' coords='34,44,270,350' href='#'&gt;&lt;/map&gt;</code></li>
+        <li><strong>&lt;mark&gt;</strong> - Represents text that has been highlighted or marked. Example: <code>&lt;mark&gt;Marked text&lt;/mark&gt;</code></li>
+        <li><strong>&lt;meta&gt;</strong> - Defines metadata about an HTML document. Example: <code>&lt;meta charset='UTF-8'&gt;</code></li>
+        <li><strong>&lt;meter&gt;</strong> - Defines a scalar measurement within a range. Example: <code>&lt;meter value='0.6' min='0' max='1'&gt;60%&lt;/meter&gt;</code></li>
+        <li><strong>&lt;nav&gt;</strong> - Defines navigation links. Example: <code>&lt;nav&gt;&lt;a href='#'&gt;Home&lt;/a&gt;&lt;/nav&gt;</code></li>
+        <li><strong>&lt;noscript&gt;</strong> - Defines an alternate content for users that have disabled scripts in their browser or have no script support. Example: <code>&lt;noscript&gt;JavaScript is not enabled&lt;/noscript&gt;</code></li>
+        <li><strong>&lt;object&gt;</strong> - Defines an embedded object. Example: <code>&lt;object data='file.pdf' type='application/pdf'&gt;&lt;/object&gt;</code></li>
+        <li><strong>&lt;ol&gt;</strong> - Defines an ordered list. Example: <code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;/ol&gt;</code></li>
+        <li><strong>&lt;optgroup&gt;</strong> - Defines a group of related options in a drop-down list. Example: <code>&lt;select&gt;&lt;optgroup label='Fruits'&gt;&lt;option value='apple'&gt;Apple&lt;/option&gt;&lt;/optgroup&gt;&lt;/select&gt;</code></li>
+        <li><strong>&lt;option&gt;</strong> - Defines an option in a drop-down list. Example: <code>&lt;option value='volvo'&gt;Volvo&lt;/option&gt;</code></li>
+        <li><strong>&lt;output&gt;</strong> - Defines the result of a calculation. Example: <code>&lt;output&gt;Result&lt;/output&gt;</code></li>
+        <li><strong>&lt;p&gt;</strong> - Defines a paragraph. Example: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></li>
+        <li><strong>&lt;param&gt;</strong> - Defines a parameter for an object. Example: <code>&lt;param name='autoplay' value='true'&gt;</code></li>
+        <li><strong>&lt;picture&gt;</strong> - Defines a container for multiple images. Example: <code>&lt;picture&gt;&lt;source srcset='image.webp' type='image/webp'&gt;&lt;img src='image.jpg' alt='Image description'&gt;&lt;/picture&gt;</code></li>
+        <li><strong>&lt;pre&gt;</strong> - Defines preformatted text. Example: <code>&lt;pre&gt;Preformatted text&lt;/pre&gt;</code></li>
+        <li><strong>&lt;progress&gt;</strong> - Represents the progress of a task. Example: <code>&lt;progress value='70' max='100'&gt;&lt;/progress&gt;</code></li>
+        <li><strong>&lt;q&gt;</strong> - Defines inline quotations. Example: <code>&lt;q&gt;Quote here&lt;/q&gt;</code></li>
+        <li><strong>&lt;rp&gt;</strong> - Defines what to show in browsers that do not support ruby annotations. Example: <code>&lt;rp&gt;( )&lt;/rp&gt;</code></li>
+        <li><strong>&lt;rt&gt;</strong> - Defines a ruby annotation. Example: <code>&lt;rt&gt;Ruby text&lt;/rt&gt;</code></li>
+        <li><strong>&lt;s&gt;</strong> - Defines text that is no longer correct. Example: <code>&lt;s&gt;Incorrect text&lt;/s&gt;</code></li>
+        <li><strong>&lt;sample&gt;</strong> - Represents a sample output. Example: <code>&lt;sample&gt;Sample text&lt;/sample&gt;</code></li>
+        <li><strong>&lt;script&gt;</strong> - Defines a client-side script. Example: <code>&lt;script&gt;alert('Hello world');&lt;/script&gt;</code></li>
+        <li><strong>&lt;section&gt;</strong> - Defines a section in a document. Example: <code>&lt;section&gt;&lt;h2&gt;Section title&lt;/h2&gt;&lt;/section&gt;</code></li>
+        <li><strong>&lt;select&gt;</strong> - Defines a drop-down list. Example: <code>&lt;select&gt;&lt;option value='volvo'&gt;Volvo&lt;/option&gt;&lt;/select&gt;</code></li>
+        <li><strong>&lt;small&gt;</strong> - Defines smaller text. Example: <code>&lt;small&gt;This text is small&lt;/small&gt;</code></li>
+        <li><strong>&lt;source&gt;</strong> - Specifies multiple media resources for elements like <audio> or <video>. Example: <code>&lt;source src='media.mp4' type='video/mp4'&gt;</code></li>
+        <li><strong>&lt;span&gt;</strong> - Defines a section in a document. Example: <code>&lt;span&gt;Some text&lt;/span&gt;</code></li>
+        <li><strong>&lt;strong&gt;</strong> - Defines important text. Example: <code>&lt;strong&gt;Important text&lt;/strong&gt;</code></li>
+        <li><strong>&lt;style&gt;</strong> - Defines style information for a document. Example: <code>&lt;style&gt;body { background-color: lightblue; }&lt;/style&gt;</code></li>
+        <li><strong>&lt;sub&gt;</strong> - Defines subscript text. Example: <code>&lt;sub&gt;Subscript&lt;/sub&gt;</code></li>
+        <li><strong>&lt;summary&gt;</strong> - Defines a summary for a <details> element. Example: <code>&lt;summary&gt;Details&lt;/summary&gt;</code></li>
+        <li><strong>&lt;sup&gt;</strong> - Defines superscript text. Example: <code>&lt;sup&gt;Superscript&lt;/sup&gt;</code></li>
+        <li><strong>&lt;table&gt;</strong> - Defines a table. Example: <code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></li>
+        <li><strong>&lt;tbody&gt;</strong> - Groups the body content in a table. Example: <code>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</code></li>
+        <li><strong>&lt;td&gt;</strong> - Defines a cell in a table. Example: <code>&lt;td&gt;Table Cell&lt;/td&gt;</code></li>
+        <li><strong>&lt;textarea&gt;</strong> - Defines a multi-line text input. Example: <code>&lt;textarea&gt;Text area content&lt;/textarea&gt;</code></li>
+        <li><strong>&lt;tfoot&gt;</strong> - Groups the footer content in a table. Example: <code>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Footer&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</code></li>
+        <li><strong>&lt;th&gt;</strong> - Defines a header cell in a table. Example: <code>&lt;th&gt;Header&lt;/th&gt;</code></li>
+        <li><strong>&lt;thead&gt;</strong> - Groups the header content in a table. Example: <code>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code></li>
+        <li><strong>&lt;time&gt;</strong> - Represents a specific period in time. Example: <code>&lt;time datetime='2022-01-01'T00:00:00&gt;New Year's Day&lt;/time&gt;</code></li>
+        <li><strong>&lt;title&gt;</strong> - Defines a title for the document. Example: <code>&lt;title&gt;Document Title&lt;/title&gt;</code></li>
+        <li><strong>&lt;tr&gt;</strong> - Defines a row in a table. Example: <code>&lt;tr&gt;&lt;td&gt;Row&lt;/td&gt;&lt;/tr&gt;</code></li>
+        <li><strong>&lt;track&gt;</strong> - Provides text tracks for <video> elements. Example: <code>&lt;track kind='subtitles' src='subtitles_en.vtt' srclang='en' label='English'&gt;</code></li>
+        <li><strong>&lt;u&gt;</strong> - Defines text that should be styled as underlined. Example: <code>&lt;u&gt;Underlined text&lt;/u&gt;</code></li>
+        <li><strong>&lt;ul&gt;</strong> - Defines an unordered list. Example: <code>&lt;ul&gt;&lt;li&gt;List item&lt;/li&gt;&lt;/ul&gt;</code></li>
+        <li><strong>&lt;var&gt;</strong> - Defines a variable in a mathematical expression. Example: <code>&lt;var&gt;x&lt;/var&gt;</code></li>
+        <li><strong>&lt;video&gt;</strong> - Defines a video or movie. Example: <code>&lt;video controls&gt;&lt;source src='video.mp4'&gt;Your browser does not support the video tag.&lt;/video&gt;</code></li>
+        <li><strong>&lt;wbr&gt;</strong> - Suggests where in a text it would be ok to add a line break. Example: <code>&lt;wbr&gt;</code></li>
+    </ul>
 </body>
 </html>
