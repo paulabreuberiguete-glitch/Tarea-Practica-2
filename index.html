@@ -1,112 +1,643 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Tags Reference</title>
+    <title>Listado de Etiquetas HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <h1>102 HTML Tags Reference</h1>
-    <ul>
-        <li><strong>&lt;a&gt;</strong> - Defines a hyperlink. Example: <code>&lt;a href='https://example.com'&gt;Link&lt;/a&gt;</code></li>
-        <li><strong>&lt;abbr&gt;</strong> - Defines an abbreviation or acronym. Example: <code>&lt;abbr title='Hypertext Markup Language'&gt;HTML&lt;/abbr&gt;</code></li>
-        <li><strong>&lt;address&gt;</strong> - Defines contact information for an author or owner of a document. Example: <code>&lt;address&gt;123 Main St&lt;/address&gt;</code></li>
-        <li><strong>&lt;area&gt;</strong> - Defines a clickable area inside an image map. Example: <code>&lt;area shape='rect' coords='34,44,270,350' href='{' target='_blank'&gt;Click&lt;/area&gt;</code></li>
-        <li><strong>&lt;article&gt;</strong> - Defines an independent, self-contained piece of content. Example: <code>&lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;p&gt;Article content...&lt;/p&gt;&lt;/article&gt;</code></li>
-        <li><strong>&lt;aside&gt;</strong> - Defines content aside from the main content. Example: <code>&lt;aside&gt;Related Links&lt;/aside&gt;</code></li>
-        <li><strong>&lt;audio&gt;</strong> - Defines sound content. Example: <code>&lt;audio controls&gt;&lt;source src='audio.mp3' type='audio/mpeg'&gt;Your browser does not support the audio tag.&lt;/audio&gt;</code></li>
-        <li><strong>&lt;b&gt;</strong> - Defines bold text. Example: <code>&lt;b&gt;Bold text&lt;/b&gt;</code></li>
-        <li><strong>&lt;base&gt;</strong> - Specifies a base URL for relative URLs in a document. Example: <code>&lt;base href='https://example.com/'&gt;</code></li>
-        <li><strong>&lt;bdi&gt;</strong> - Isolates a part of text that might be formatted in a different direction. Example: <code>&lt;bdi&gt;This text is not translated!&lt;/bdi&gt;</code></li>
-        <li><strong>&lt;bdo&gt;</strong> - Overrides the current text direction. Example: <code>&lt;bdo dir='rtl'&gt;This text is right-to-left.&lt;/bdo&gt;</code></li>
-        <li><strong>&lt;br&gt;</strong> - Inserts a single line break. Example: <code>&lt;br&gt;</code></li>
-        <li><strong>&lt;button&gt;</strong> - Defines a clickable button. Example: <code>&lt;button&gt;Click me&lt;/button&gt;</code></li>
-        <li><strong>&lt;canvas&gt;</strong> - Defines a drawing area. Example: <code>&lt;canvas id='myCanvas' width='200' height='100'&gt;&lt;/canvas&gt;</code></li>
-        <li><strong>&lt;caption&gt;</strong> - Defines a table caption. Example: <code>&lt;table&gt;&lt;caption&gt;Table Caption&lt;/caption&gt;
-        
-        <li><strong>&lt;cite&gt;</strong> - Defines a citation. Example: <code>&lt;cite&gt;Shakeapeare&lt;/cite&gt;</code></li>
-        <li><strong>&lt;code&gt;</strong> - Displays a single line of code. Example: <code>&lt;code&gt;var x = 5;&lt;/code&gt;</code></li>
-        <li><strong>&lt;col&gt;</strong> - Specifies column properties for an element. Example: <code>&lt;col style='background-color:lightgray'&gt;</code></li>
-        <li><strong>&lt;colgroup&gt;</strong> - Specifies a group of one or more columns in a table for formatting. Example: <code>&lt;colgroup&gt;&lt;col style='background-color:gray'&gt;&lt;/colgroup&gt;</code></li>
-        <li><strong>&lt;data&gt;</strong> - Links a given content with a machine-readable translation. Example: <code>&lt;data value='12345'&gt;12345&lt;/data&gt;</code></li>
-        <li><strong>&lt;datalist&gt;</strong> - Specifies a list of pre-defined options for input controls. Example: <code>&lt;input list='browsers'&gt;&lt;datalist id='browsers'&gt;&lt;option value='Chrome'&gt;&lt;option value='Firefox'&gt;&lt;/datalist&gt;</code></li>
-        <li><strong>&lt;dd&gt;</strong> - Defines a description of a term in a description list. Example: <code>&lt;dd&gt;Description&lt;/dd&gt;</code></li>
-        <li><strong>&lt;del&gt;</strong> - Defines text that has been deleted from a document. Example: <code>&lt;del&gt;Deleted text&lt;/del&gt;</code></li>
-        <li><strong>&lt;details&gt;</strong> - Defines additional details that the user can view or hide. Example: <code>&lt;details&gt;&lt;summary&gt;More info&lt;/summary&gt;Details...&lt;/details&gt;</code></li>
-        <li><strong>&lt;dfn&gt;</strong> - Represents the defining instance of a term. Example: <code>&lt;dfn&gt;HTML&lt;/dfn&gt;</code></li>
-        <li><strong>&lt;dialog&gt;</strong> - Defines a dialog box or window. Example: <code>&lt;dialog open&gt;This is a dialog&lt;/dialog&gt;</code></li>
-        <li><strong>&lt;div&gt;</strong> - Defines a section or a division in an HTML document. Example: <code>&lt;div&gt;&lt;p&gt;Some text&lt;/p&gt;&lt;/div&gt;</code></li>
-        <li><strong>&lt;dl&gt;</strong> - Defines a description list. Example: <code>&lt;dl&gt;&lt;dt&gt;Term&lt;/dt&gt;&lt;dd&gt;Definition&lt;/dd&gt;&lt;/dl&gt;</code></li>
-        <li><strong>&lt;dt&gt;</strong> - Defines a term in a description list. Example: <code>&lt;dt&gt;Term&lt;/dt&gt;</code></li>
-        <li><strong>&lt;em&gt;</strong> - Defines emphasized text. Example: <code>&lt;em&gt;This text is emphasized&lt;/em&gt;</code></li>
-        <li><strong>&lt;embed&gt;</strong> - Defines a container for an external application or interactive content (like a plug-in). Example: <code>&lt;embed src='file.swf'&gt;</code></li>
-        <li><strong>&lt;fieldset&gt;</strong> - Groups related elements in a form. Example: <code>&lt;fieldset&gt;&lt;legend&gt;Personal Info&lt;/legend&gt;&lt;p&gt;Name: <input type='text'>&lt;/p&gt;&lt;/fieldset&gt;</code></li>
-        <li><strong>&lt;figcaption&gt;</strong> - Defines a caption for a <figure> element. Example: <code>&lt;figure&gt;&lt;img src='image.jpg'&gt;&lt;figcaption&gt;An image&lt;/figcaption&gt;&lt;/figure&gt;</code></li>
-        <li><strong>&lt;figure&gt;</strong> - Specifies self-contained content, like an image with a caption. Example: <code>&lt;figure&gt;&lt;img src='image.jpg'&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;</code></li>
-        <li><strong>&lt;footer&gt;</strong> - Defines a footer for a document or section. Example: <code>&lt;footer&gt;&lt;p&gt;Footer content&lt;/p&gt;&lt;/footer&gt;</code></li>
-        <li><strong>&lt;form&gt;</strong> - Defines an HTML form for user input. Example: <code>&lt;form&gt;&lt;input type='text'&gt;&lt;/form&gt;</code></li>
-        <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Defines HTML headings. Example: <code>&lt;h1&gt;Heading 1&lt;/h1&gt; ... &lt;h6&gt;Heading 6&lt;/h6&gt;</code></li>
-        <li><strong>&lt;head&gt;</strong> - Contains meta-information about the document. Example: <code>&lt;head&gt;&lt;title&gt;Document Title&lt;/title&gt;&lt;/head&gt;</code></li>
-        <li><strong>&lt;header&gt;</strong> - Defines a header for a document or section. Example: <code>&lt;header&gt;&lt;h1&gt;Header Content&lt;/h1&gt;&lt;/header&gt;</code></li>
-        <li><strong>&lt;hr&gt;</strong> - Defines a thematic change in the content. Example: <code>&lt;hr&gt;</code></li>
-        <li><strong>&lt;html&gt;</strong> - Defines the root of an HTML document. Example: <code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code></li>
-        <li><strong>&lt;i&gt;</strong> - Defines italic text. Example: <code>&lt;i&gt;Italic text&lt;/i&gt;</code></li>
-        <li><strong>&lt;iframe&gt;</strong> - Defines an inline frame. Example: <code>&lt;iframe src='https://example.com'&gt;&lt;/iframe&gt;</code></li>
-        <li><strong>&lt;img&gt;</strong> - Embeds an image in a document. Example: <code>&lt;img src='image.jpg' alt='Description'&gt;</code></li>
-        <li><strong>&lt;input&gt;</strong> - Defines an input control. Example: <code>&lt;input type='text'&gt;</code></li>
-        <li><strong>&lt;ins&gt;</strong> - Defines text that has been inserted into a document. Example: <code>&lt;ins&gt;Inserted text&lt;/ins&gt;</code></li>
-        <li><strong>&lt;kbd&gt;</strong> - Defines keyboard input. Example: <code>&lt;kbd&gt;Ctrl + C&lt;/kbd&gt;</code></li>
-        <li><strong>&lt<label&gt;</strong> - Defines a label for an <input> element. Example: <code>&lt;label for='name'&gt;Name&lt;/label&gt;&lt;input type='text' id='name'&gt;</code></li>
-        <li><strong>&lt;legend&gt;</strong> - Defines a caption for a <fieldset> element. Example: <code>&lt;fieldset&gt;&lt;legend&gt;Personal Info&lt;/legend&gt;&lt;/fieldset&gt;</code></li>
-        <li><strong>&lt;li&gt;</strong> - Defines a list item. Example: <code>&lt;li&gt;List item&lt;/li&gt;</code></li>
-        <li><strong>&lt;link&gt;</strong> - Defines the relationship between a document and an external resource (most used for stylesheets). Example: <code>&lt;link rel='stylesheet' href='style.css'&gt;</code></li>
-        <li><strong>&lt;main&gt;</strong> - Defines the main content of a document. Example: <code>&lt;main&gt;&lt;p&gt;Main Content&lt;/p&gt;&lt;/main&gt;</code></li>
-        <li><strong>&lt;map&gt;</strong> - Defines an image map. Example: <code>&lt;map name='mapname'&gt;&lt;area shape='rect' coords='34,44,270,350' href='#'&gt;&lt;/map&gt;</code></li>
-        <li><strong>&lt;mark&gt;</strong> - Represents text that has been highlighted or marked. Example: <code>&lt;mark&gt;Marked text&lt;/mark&gt;</code></li>
-        <li><strong>&lt;meta&gt;</strong> - Defines metadata about an HTML document. Example: <code>&lt;meta charset='UTF-8'&gt;</code></li>
-        <li><strong>&lt;meter&gt;</strong> - Defines a scalar measurement within a range. Example: <code>&lt;meter value='0.6' min='0' max='1'&gt;60%&lt;/meter&gt;</code></li>
-        <li><strong>&lt;nav&gt;</strong> - Defines navigation links. Example: <code>&lt;nav&gt;&lt;a href='#'&gt;Home&lt;/a&gt;&lt;/nav&gt;</code></li>
-        <li><strong>&lt;noscript&gt;</strong> - Defines an alternate content for users that have disabled scripts in their browser or have no script support. Example: <code>&lt;noscript&gt;JavaScript is not enabled&lt;/noscript&gt;</code></li>
-        <li><strong>&lt;object&gt;</strong> - Defines an embedded object. Example: <code>&lt;object data='file.pdf' type='application/pdf'&gt;&lt;/object&gt;</code></li>
-        <li><strong>&lt;ol&gt;</strong> - Defines an ordered list. Example: <code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;/ol&gt;</code></li>
-        <li><strong>&lt;optgroup&gt;</strong> - Defines a group of related options in a drop-down list. Example: <code>&lt;select&gt;&lt;optgroup label='Fruits'&gt;&lt;option value='apple'&gt;Apple&lt;/option&gt;&lt;/optgroup&gt;&lt;/select&gt;</code></li>
-        <li><strong>&lt;option&gt;</strong> - Defines an option in a drop-down list. Example: <code>&lt;option value='volvo'&gt;Volvo&lt;/option&gt;</code></li>
-        <li><strong>&lt;output&gt;</strong> - Defines the result of a calculation. Example: <code>&lt;output&gt;Result&lt;/output&gt;</code></li>
-        <li><strong>&lt;p&gt;</strong> - Defines a paragraph. Example: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></li>
-        <li><strong>&lt;param&gt;</strong> - Defines a parameter for an object. Example: <code>&lt;param name='autoplay' value='true'&gt;</code></li>
-        <li><strong>&lt;picture&gt;</strong> - Defines a container for multiple images. Example: <code>&lt;picture&gt;&lt;source srcset='image.webp' type='image/webp'&gt;&lt;img src='image.jpg' alt='Image description'&gt;&lt;/picture&gt;</code></li>
-        <li><strong>&lt;pre&gt;</strong> - Defines preformatted text. Example: <code>&lt;pre&gt;Preformatted text&lt;/pre&gt;</code></li>
-        <li><strong>&lt;progress&gt;</strong> - Represents the progress of a task. Example: <code>&lt;progress value='70' max='100'&gt;&lt;/progress&gt;</code></li>
-        <li><strong>&lt;q&gt;</strong> - Defines inline quotations. Example: <code>&lt;q&gt;Quote here&lt;/q&gt;</code></li>
-        <li><strong>&lt;rp&gt;</strong> - Defines what to show in browsers that do not support ruby annotations. Example: <code>&lt;rp&gt;( )&lt;/rp&gt;</code></li>
-        <li><strong>&lt;rt&gt;</strong> - Defines a ruby annotation. Example: <code>&lt;rt&gt;Ruby text&lt;/rt&gt;</code></li>
-        <li><strong>&lt;s&gt;</strong> - Defines text that is no longer correct. Example: <code>&lt;s&gt;Incorrect text&lt;/s&gt;</code></li>
-        <li><strong>&lt;sample&gt;</strong> - Represents a sample output. Example: <code>&lt;sample&gt;Sample text&lt;/sample&gt;</code></li>
-        <li><strong>&lt;script&gt;</strong> - Defines a client-side script. Example: <code>&lt;script&gt;alert('Hello world');&lt;/script&gt;</code></li>
-        <li><strong>&lt;section&gt;</strong> - Defines a section in a document. Example: <code>&lt;section&gt;&lt;h2&gt;Section title&lt;/h2&gt;&lt;/section&gt;</code></li>
-        <li><strong>&lt;select&gt;</strong> - Defines a drop-down list. Example: <code>&lt;select&gt;&lt;option value='volvo'&gt;Volvo&lt;/option&gt;&lt;/select&gt;</code></li>
-        <li><strong>&lt;small&gt;</strong> - Defines smaller text. Example: <code>&lt;small&gt;This text is small&lt;/small&gt;</code></li>
-        <li><strong>&lt;source&gt;</strong> - Specifies multiple media resources for elements like <audio> or <video>. Example: <code>&lt;source src='media.mp4' type='video/mp4'&gt;</code></li>
-        <li><strong>&lt;span&gt;</strong> - Defines a section in a document. Example: <code>&lt;span&gt;Some text&lt;/span&gt;</code></li>
-        <li><strong>&lt;strong&gt;</strong> - Defines important text. Example: <code>&lt;strong&gt;Important text&lt;/strong&gt;</code></li>
-        <li><strong>&lt;style&gt;</strong> - Defines style information for a document. Example: <code>&lt;style&gt;body { background-color: lightblue; }&lt;/style&gt;</code></li>
-        <li><strong>&lt;sub&gt;</strong> - Defines subscript text. Example: <code>&lt;sub&gt;Subscript&lt;/sub&gt;</code></li>
-        <li><strong>&lt;summary&gt;</strong> - Defines a summary for a <details> element. Example: <code>&lt;summary&gt;Details&lt;/summary&gt;</code></li>
-        <li><strong>&lt;sup&gt;</strong> - Defines superscript text. Example: <code>&lt;sup&gt;Superscript&lt;/sup&gt;</code></li>
-        <li><strong>&lt;table&gt;</strong> - Defines a table. Example: <code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></li>
-        <li><strong>&lt;tbody&gt;</strong> - Groups the body content in a table. Example: <code>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</code></li>
-        <li><strong>&lt;td&gt;</strong> - Defines a cell in a table. Example: <code>&lt;td&gt;Table Cell&lt;/td&gt;</code></li>
-        <li><strong>&lt;textarea&gt;</strong> - Defines a multi-line text input. Example: <code>&lt;textarea&gt;Text area content&lt;/textarea&gt;</code></li>
-        <li><strong>&lt;tfoot&gt;</strong> - Groups the footer content in a table. Example: <code>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Footer&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</code></li>
-        <li><strong>&lt;th&gt;</strong> - Defines a header cell in a table. Example: <code>&lt;th&gt;Header&lt;/th&gt;</code></li>
-        <li><strong>&lt;thead&gt;</strong> - Groups the header content in a table. Example: <code>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code></li>
-        <li><strong>&lt;time&gt;</strong> - Represents a specific period in time. Example: <code>&lt;time datetime='2022-01-01'T00:00:00&gt;New Year's Day&lt;/time&gt;</code></li>
-        <li><strong>&lt;title&gt;</strong> - Defines a title for the document. Example: <code>&lt;title&gt;Document Title&lt;/title&gt;</code></li>
-        <li><strong>&lt;tr&gt;</strong> - Defines a row in a table. Example: <code>&lt;tr&gt;&lt;td&gt;Row&lt;/td&gt;&lt;/tr&gt;</code></li>
-        <li><strong>&lt;track&gt;</strong> - Provides text tracks for <video> elements. Example: <code>&lt;track kind='subtitles' src='subtitles_en.vtt' srclang='en' label='English'&gt;</code></li>
-        <li><strong>&lt;u&gt;</strong> - Defines text that should be styled as underlined. Example: <code>&lt;u&gt;Underlined text&lt;/u&gt;</code></li>
-        <li><strong>&lt;ul&gt;</strong> - Defines an unordered list. Example: <code>&lt;ul&gt;&lt;li&gt;List item&lt;/li&gt;&lt;/ul&gt;</code></li>
-        <li><strong>&lt;var&gt;</strong> - Defines a variable in a mathematical expression. Example: <code>&lt;var&gt;x&lt;/var&gt;</code></li>
-        <li><strong>&lt;video&gt;</strong> - Defines a video or movie. Example: <code>&lt;video controls&gt;&lt;source src='video.mp4'&gt;Your browser does not support the video tag.&lt;/video&gt;</code></li>
-        <li><strong>&lt;wbr&gt;</strong> - Suggests where in a text it would be ok to add a line break. Example: <code>&lt;wbr&gt;</code></li>
-    </ul>
+    <h1>Lista de 102 Etiquetas HTML</h1>
+    <table>
+        <tr>
+            <th>Número</th>
+            <th>Nombre de la Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo de Uso</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>&lt;html&gt;</td>
+            <td>La raíz de un documento HTML.</td>
+            <td>&lt;html&gt;...&lt;/html&gt;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&lt;head&gt;</td>
+            <td>Contiene metadatos sobre el documento.</td>
+            <td>&lt;head&gt;&lt;title&gt;Título&lt;/title&gt;&lt;/head&gt;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&lt;title&gt;</td>
+            <td>Define el título del documento.</td>
+            <td>&lt;title&gt;Mi Página&lt;/title&gt;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&lt;body&gt;</td>
+            <td>Especifica el cuerpo del documento.</td>
+            <td>&lt;body&gt;Contenido&lt;/body&gt;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>&lt;p&gt;</td>
+            <td>Define un párrafo.</td>
+            <td>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>&lt;a&gt;</td>
+            <td>Crea un enlace.</td>
+            <td>&lt;a href='http://ejemplo.com'&gt;Enlace&lt;/a&gt;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&lt;img&gt;</td>
+            <td>Inserta una imagen.</td>
+            <td>&lt;img src='imagen.jpg' alt='Descripción'&gt;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>&lt;div&gt;</td>
+            <td>Define una sección o un contenedor.</td>
+            <td>&lt;div&gt;Contenido&lt;/div&gt;</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>&lt;span&gt;</td>
+            <td>Define un contenedor en línea.</td>
+            <td>&lt;span&gt;Texto en línea&lt;/span&gt;</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>&lt;h1&gt;&lt;h6&gt;</td>
+            <td>Define encabezados de nivel 1 a 6.</td>
+            <td>&lt;h1&gt;Encabezado 1&lt;/h1&gt;</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>&lt;ul&gt;</td>
+            <td>Define una lista desordenada.</td>
+            <td>&lt;ul&gt;&lt;li&gt;Elemento&lt;/li&gt;&lt;/ul&gt;</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>&lt;ol&gt;</td>
+            <td>Define una lista ordenada.</td>
+            <td>&lt;ol&gt;&lt;li&gt;Elemento&lt;/li&gt;&lt;/ol&gt;</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>&lt;li&gt;</td>
+            <td>Define un elemento de lista.</td>
+            <td>&lt;li&gt;Elemento de lista&lt;/li&gt;</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>&lt;strong&gt;</td>
+            <td>Define texto fuerte.</td>
+            <td>&lt;strong&gt;Texto fuerte&lt;/strong&gt;</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>&lt;em&gt;</td>
+            <td>Define texto enfatizado.</td>
+            <td>&lt;em&gt;Texto enfatizado&lt;/em&gt;</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>&lt;br&gt;</td>
+            <td>Inserta un salto de línea.</td>
+            <td>&lt;p&gt;Texto&lt;br&gt;Nuevo línea&lt;/p&gt;</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>&lt;hr&gt;</td>
+            <td>Inserta una línea horizontal.</td>
+            <td>&lt;hr&gt;</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>&lt;table&gt;</td>
+            <td>Define una tabla.</td>
+            <td>&lt;table&gt;...&lt;/table&gt;</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>&lt;tr&gt;</td>
+            <td>Define una fila en una tabla.</td>
+            <td>&lt;tr&gt;...&lt;/tr&gt;</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>&lt;th&gt;</td>
+            <td>Define una celda de encabezado en una tabla.</td>
+            <td>&lt;th&gt;Encabezado&lt;/th&gt;</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>&lt;td&gt;</td>
+            <td>Define una celda en una tabla.</td>
+            <td>&lt;td&gt;Contenido&lt;/td&gt;</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>&lt;caption&gt;</td>
+            <td>Define un título para una tabla.</td>
+            <td>&lt;caption&gt;Título de la tabla&lt;/caption&gt;</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>&lt;thead&gt;</td>
+            <td>Define un grupo de cabecera en una tabla.</td>
+            <td>&lt;table&gt;&lt;thead&gt;...&lt;/thead&gt;&lt;/table&gt;</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>&lt;tbody&gt;</td>
+            <td>Define un grupo de cuerpo en una tabla.</td>
+            <td>&lt;table&gt;&lt;tbody&gt;...&lt;/tbody&gt;&lt;/table&gt;</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>&lt;tfoot&gt;</td>
+            <td>Define un grupo de pie en una tabla.</td>
+            <td>&lt;table&gt;&lt;tfoot&gt;...&lt;/tfoot&gt;&lt;/table&gt;</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>&lt;form&gt;</td>
+            <td>Define un formulario.</td>
+            <td>&lt;form&gt;...&lt;/form&gt;</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>&lt;input&gt;</td>
+            <td>Define un campo de entrada.</td>
+            <td>&lt;input type='text'&gt;</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>&lt;button&gt;</td>
+            <td>Define un botón.</td>
+            <td>&lt;button&gt;Presionar&lt;/button&gt;</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>&lt;select&gt;</td>
+            <td>Define un menú desplegable.</td>
+            <td>&lt;select&gt;&lt;option&gt;Opción&lt;/option&gt;&lt;/select&gt;</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>&lt;option&gt;</td>
+            <td>Define una opción en un menú desplegable.</td>
+            <td>&lt;option&gt;Opción&lt;/option&gt;</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>&lt;textarea&gt;</td>
+            <td>Define un área de texto.</td>
+            <td>&lt;textarea&gt;Texto&lt;/textarea&gt;</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>&lt;label&gt;</td>
+            <td>Define una etiqueta para un elemento de entrada.</td>
+            <td>&lt;label&gt;Nombre:&lt;/label&gt;</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>&lt;fieldset&gt;</td>
+            <td>Define un grupo de controles relacionados en un formulario.</td>
+            <td>&lt;fieldset&gt;...&lt;/fieldset&gt;</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>&lt;legend&gt;</td>
+            <td>Define un título para un grupo de controles relacionados.</td>
+            <td>&lt;legend&gt;Título&lt;/legend&gt;</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>&lt;meter&gt;</td>
+            <td>Define una medida escalar dentro de un rango conocido.</td>
+            <td>&lt;meter&gt;75&lt;/meter&gt;</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>&lt;progress&gt;</td>
+            <td>Representa el progreso de una tarea.</td>
+            <td>&lt;progress value='50' max='100'&gt;&lt;/progress&gt;</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>&lt;datalist&gt;</td>
+            <td>Define una lista de opciones sugeridas para un elemento de entrada.</td>
+            <td>&lt;input list='opciones'&gt;&lt;datalist id='opciones'&gt;&lt;option&gt;Opción 1&lt;/option&gt;&lt;/datalist&gt;</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>&lt;script&gt;</td>
+            <td>Define un script de programación.</td>
+            <td>&lt;script&gt;console.log('Hola');&lt;/script&gt;</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>&lt;style&gt;</td>
+            <td>Define estilos internos.</td>
+            <td>&lt;style&gt;body {background-color: red;}&lt;/style&gt;</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>&lt;link&gt;</td>
+            <td>Define la relación entre un documento y un recurso externo (como CSS).</td>
+            <td>&lt;link rel='stylesheet' href='estilos.css'&gt;</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>&lt;meta&gt;</td>
+            <td>Define metadatos sobre el documento.</td>
+            <td>&lt;meta charset='UTF-8'&gt;</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>&lt;base&gt;</td>
+            <td>Define una URL base para todas las URL relativas en el documento.</td>
+            <td>&lt;base href='http://ejemplo.com/'&gt;</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>&lt;noscript&gt;</td>
+            <td>Define un contenido alternativo para navegadores que no soportan scripts.</td>
+            <td>&lt;noscript&gt;JavaScript no soportado.&lt;/noscript&gt;</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>&lt;svg&gt;</td>
+            <td>Define un contenedor para gráficos vectoriales SVG.</td>
+            <td>&lt;svg&gt;&lt;circle cx='50' cy='50' r='40' /&gt;&lt;/svg&gt;</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>&lt;canvas&gt;</td>
+            <td>Define un área de dibujo.</td>
+            <td>&lt;canvas&gt;&lt;/canvas&gt;</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>&lt;audio&gt;</td>
+            <td>Define contenido de audio.</td>
+            <td>&lt;audio controls&gt;&lt;source src='audio.mp3' type='audio/mpeg'&gt;&lt;/audio&gt;</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>&lt;video&gt;</td>
+            <td>Define contenido de vídeo.</td>
+            <td>&lt;video controls&gt;&lt;source src='video.mp4' type='video/mp4'&gt;&lt;/video&gt;</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>&lt;source&gt;</td>
+            <td>Define múltiples fuentes para elementos multimedia.</td>
+            <td>&lt;source src='video.mp4' type='video/mp4'&gt;</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>&lt;track&gt;</td>
+            <td>Define pistas para elementos de vídeo y audio.</td>
+            <td>&lt;track&gt;&lt;/track&gt;</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>&lt;embed&gt;</td>
+            <td>Define un contenido embebido.</td>
+            <td>&lt;embed src='contenido.pdf'&gt;</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>&lt;object&gt;</td>
+            <td>Define un objeto embebido.</td>
+            <td>&lt;object data='contenido.pdf'&gt;&lt;/object&gt;</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td>&lt;param&gt;</td>
+            <td>Define parámetros para objetos embebidos.</td>
+            <td>&lt;param name='nombre' value='valor'&gt;</td>
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>&lt;picture&gt;</td>
+            <td>Define un contenedor para imágenes adaptativas.</td>
+            <td>&lt;picture&gt;&lt;source srcset='imagen.webp' type='image/webp'&gt;&lt;img src='imagen.jpg'&gt;&lt;/picture&gt;</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>&lt;dialog&gt;</td>
+            <td>Define un cuadro de diálogo.</td>
+            <td>&lt;dialog&gt;Diálogo&lt;/dialog&gt;</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>&lt;summary&gt;</td>
+            <td>Define un resumen para un elemento <details>.</td>
+            <td>&lt;details&gt;&lt;summary&gt;Resumen&lt;/summary&gt;&lt;/details&gt;</td>
+        </tr>
+        <tr>
+            <td>56</td>
+            <td>&lt;details&gt;</td>
+            <td>Define un detalle de información que el usuario puede mostrar o esconder.</td>
+            <td>&lt;details&gt;Contenido&lt;/details&gt;</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>&lt;template&gt;</td>
+            <td>Define un contenido no renderizado que puede ser reutilizado.</td>
+            <td>&lt;template&gt;Contenido&lt;/template&gt;</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td>&lt;slot&gt;</td>
+            <td>Define un lugar en un elemento para insertar contenido externo.</td>
+            <td>&lt;slot&gt;&lt;/slot&gt;</td>
+        </tr>
+        <tr>
+            <td>59</td>
+            <td>&lt;kbd&gt;</td>
+            <td>Define texto que representa la entrada del teclado.</td>
+            <td>&lt;kbd&gt;Ctrl+C&lt;/kbd&gt;</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>&lt;var&gt;</td>
+            <td>Define un término de variable en expresiones matemáticas o en scripts.</td>
+            <td>&lt;var&gt;x&lt;/var&gt;</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>&lt;mark&gt;</td>
+            <td>Define texto resaltado.</td>
+            <td>&lt;mark&gt;Texto resaltado&lt;/mark&gt;</td>
+        </tr>
+        <tr>
+            <td>62</td>
+            <td>&lt;cite&gt;</td>
+            <td>Define una cita de una obra creativa.</td>
+            <td>&lt;cite&gt;Obra&lt;/cite&gt;</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td>&lt;q&gt;</td>
+            <td>Define una cita en línea.</td>
+            <td>&lt;q&gt;Texto de la cita&lt;/q&gt;</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td>&lt;dl&gt;</td>
+            <td>Define una lista de definiciones.</td>
+            <td>&lt;dl&gt;&lt;dt&gt;Definición&lt;/dt&gt;&lt;dd&gt;Descripción&lt;/dd&gt;&lt;/dl&gt;</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>&lt;dt&gt;</td>
+            <td>Define un término en una lista de definiciones.</td>
+            <td>&lt;dt&gt;Término&lt;/dt&gt;</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td>&lt;dd&gt;</td>
+            <td>Define una descripción en una lista de definiciones.</td>
+            <td>&lt;dd&gt;Descripción&lt;/dd&gt;</td>
+        </tr>
+        <tr>
+            <td>67</td>
+            <td>&lt;bdo&gt;</td>
+            <td>Define la dirección del texto.</td>
+            <td>&lt;bdo dir='rtl'&gt;Texto&lt;/bdo&gt;</td>
+        </tr>
+        <tr>
+            <td>68</td>
+            <td>&lt;bdi&gt;</td>
+            <td>Define un fragmento de texto que debe ser aislado de su contexto.</td>
+            <td>&lt;bdi&gt;Texto&lt;/bdi&gt;</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td>&lt;time&gt;</td>
+            <td>Define un periodo de tiempo.</td>
+            <td>&lt;time datetime='2026-03-02'&gt;Hoy&lt;/time&gt;</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td>&lt;address&gt;</td>
+            <td>Define información de contacto del autor del documento.</td>
+            <td>&lt;address&gt;Contacto&lt;/address&gt;</td>
+        </tr>
+        <tr>
+            <td>71</td>
+            <td>&lt;noscript&gt;</td>
+            <td>Contenido alternativo para navegadores que no ejecutan scripts.</td>
+            <td>&lt;noscript&gt;Sin JavaScript&lt;/noscript&gt;</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td>&lt;aside&gt;</td>
+            <td>Define contenido que es secundario con respecto al contenido principal.</td>
+            <td>&lt;aside&gt;Contenido secundario&lt;/aside&gt;</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td>&lt;main&gt;</td>
+            <td>Define el contenido principal del documento.</td>
+            <td>&lt;main&gt;Contenido principal&lt;/main&gt;</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td>&lt;footer&gt;</td>
+            <td>Define un pie de página para un documento o sección.</td>
+            <td>&lt;footer&gt;Pie de página&lt;/footer&gt;</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td>&lt;header&gt;</td>
+            <td>Define un encabezado para un documento o sección.</td>
+            <td>&lt;header&gt;Encabezado&lt;/header&gt;</td>
+        </tr>
+        <tr>
+            <td>76</td>
+            <td>&lt;nav&gt;</td>
+            <td>Define un conjunto de enlaces de navegación.</td>
+            <td>&lt;nav&gt;&lt;a href='pagina.html'&gt;Página&lt;/a&gt;&lt;/nav&gt;</td>
+        </tr>
+        <tr>
+            <td>77</td>
+            <td>&lt;section&gt;</td>
+            <td>Define una sección temática en un documento.</td>
+            <td>&lt;section&gt;Contenido de la sección&lt;/section&gt;</td>
+        </tr>
+        <tr>
+            <td>78</td>
+            <td>&lt;article&gt;</td>
+            <td>Define un contenido independiente en un documento.</td>
+            <td>&lt;article&gt;Artículo&lt;/article&gt;</td>
+        </tr>
+        <tr>
+            <td>79</td>
+            <td>&lt;blockquote&gt;</td>
+            <td>Define una cita en bloque.</td>
+            <td>&lt;blockquote&gt;Texto de cita&lt;/blockquote&gt;</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>&lt;canvas&gt;</td>
+            <td>Define un área para gráficos.</td>
+            <td>&lt;canvas&gt;&lt;/canvas&gt;</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td>&lt;template&gt;</td>
+            <td>Define contenido no renderizado que puede ser reutilizado.</td>
+            <td>&lt;template&gt;Contenido&lt;/template&gt;</td>
+        </tr>
+        <tr>
+            <td>82</td>
+            <td>&lt;slot&gt;</td>
+            <td>Define un lugar para insertar contenido externo.</td>
+            <td>&lt;slot&gt;&lt;/slot&gt;</td>
+        </tr>
+        <tr>
+            <td>83</td>
+            <td>&lt;progress&gt;</td>
+            <td>Representa el progreso de una tarea.</td>
+            <td>&lt;progress value='50' max='100'&gt;&lt;/progress&gt;</td>
+        </tr>
+        <tr>
+            <td>84</td>
+            <td>&lt;time&gt;</td>
+            <td>Define un periodo de tiempo.</td>
+            <td>&lt;time datetime='2026-03-02'&gt;Hoy&lt;/time&gt;</td>
+        </tr>
+        <tr>
+            <td>85</td>
+            <td>&lt;address&gt;</td>
+            <td>Define información de contacto.</td>
+            <td>&lt;address&gt;Contacto&lt;/address&gt;</td>
+        </tr>
+        <tr>
+            <td>86</td>
+            <td>&lt;noscript&gt;</td>
+            <td>Contenido alternativo para navegadores sin JavaScript.</td>
+            <td>&lt;noscript&gt;Sin JavaScript&lt;/noscript&gt;</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>&lt;dialog&gt;</td>
+            <td>Define un cuadro de diálogo.</td>
+            <td>&lt;dialog&gt;Diálogo&lt;/dialog&gt;</td>
+        </tr>
+        <tr>
+            <td>88</td>
+            <td>&lt;summary&gt;</td>
+            <td>Define un resumen para un elemento <details>.</td>
+            <td>&lt;details&gt;&lt;summary&gt;Resumen&lt;/summary&gt;&lt;/details&gt;</td>
+        </tr>
+        <tr>
+            <td>89</td>
+            <td>&lt;details&gt;</td>
+            <td>Define un detalle de información.</td>
+            <td>&lt;details&gt;Contenido&lt;/details&gt;</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>&lt;code&gt;</td>
+            <td>Define un fragmento de código informático.</td>
+            <td>&lt;code&gt;Código&lt;/code&gt;</td>
+        </tr>
+        <tr>
+            <td>91</td>
+            <td>&lt;var&gt;</td>
+            <td>Define un término de variable.</td>
+            <td>&lt;var&gt;Nombre&lt;/var&gt;</td>
+        </tr>
+        <tr>
+            <td>92</td>
+            <td>&lt;samp&gt;</td>
+            <td>Define un fragmento de salida de un programa informático.</td>
+            <td>&lt;samp&gt;Salida&lt;/samp&gt;</td>
+        </tr>
+        <tr>
+            <td>93</td>
+            <td>&lt;time&gt;</td>
+            <td>Define un periodo de tiempo.</td>
+            <td>&lt;time datetime='2026-03-02'&gt;Ahora&lt;/time&gt;</td>
+        </tr>
+        <tr>
+            <td>94</td>
+            <td>&lt;bdo&gt;</td>
+            <td>Define la dirección del texto.</td>
+            <td>&lt;bdo dir='rtl'&gt;Texto&lt;/bdo&gt;</td>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td>&lt;bdi&gt;</td>
+            <td>Define texto que debe ser aislado de su contexto.</td>
+            <td>&lt;bdi&gt;Texto&lt;/bdi&gt;</td>
+        </tr>
+        <tr>
+            <td>96</td>
+            <td>&lt;progress&gt;</td>
+            <td>Representa el progreso de una tarea.</td>
+            <td>&lt;progress value='50' max='100'&gt;&lt;/progress&gt;</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>&lt;dialog&gt;</td>
+            <td>Define un cuadro de diálogo.</td>
+            <td>&lt;dialog&gt;Diálogo&lt;/dialog&gt;</td>
+        </tr>
+        <tr>
+            <td>98</td>
+            <td>&lt;summary&gt;</td>
+            <td>Define un resumen.</td>
+            <td>&lt;details&gt;&lt;summary&gt;Resumen&lt;/summary&gt;&lt;/details&gt;</td>
+        </tr>
+        <tr>
+            <td>99</td>
+            <td>&lt;script&gt;</td>
+            <td>Define un script de programación.</td>
+            <td>&lt;script&gt;console.log('Hola');&lt;/script&gt;</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>&lt;style&gt;</td>
+            <td>Define estilos internos.</td>
+            <td>&lt;style&gt;body {background-color: red;}&lt;/style&gt;</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>&lt;link&gt;</td>
+            <td>Define la relación entre un documento y un recurso externo.</td>
+            <td>&lt;link rel='stylesheet' href='estilos.css'&gt;</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>&lt;meta&gt;</td>
+            <td>Define metadatos sobre el documento.</td>
+            <td>&lt;meta charset='UTF-8'&gt;</td>
+        </tr>
+    </table>
 </body>
 </html>
